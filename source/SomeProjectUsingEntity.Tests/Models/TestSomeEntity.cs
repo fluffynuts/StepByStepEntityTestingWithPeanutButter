@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
+using PeanutButter.TestUtils.Entity;
 using PeanutButter.TestUtils.Generic;
 using SomeProjectUsingEntity.Models;
 
@@ -28,6 +29,21 @@ namespace SomeProjectUsingEntity.Tests.Models
 
             //---------------Test Result -----------------------
         }
+
+        [Test]
+        public void Name_ShouldBeRequired()
+        {
+            //---------------Set up test pack-------------------
+            var sut = typeof (SomeEntity);
+
+            //---------------Assert Precondition----------------
+
+            //---------------Execute Test ----------------------
+            sut.ShouldHaveRequiredProperty("Name");
+
+            //---------------Test Result -----------------------
+        }
+
 
     }
 }
