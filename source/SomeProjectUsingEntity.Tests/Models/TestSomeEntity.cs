@@ -57,8 +57,5 @@ namespace SomeProjectUsingEntity.Tests.Models
 
             //---------------Test Result -----------------------
         }
-
-
-
     }
 }
