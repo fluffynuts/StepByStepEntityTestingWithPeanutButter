@@ -14,6 +14,8 @@ namespace SomeProjectUsingEntity.Tests.Models
     public class TestSomeEntity
     {
         [TestCase("Id", typeof(int))]
+        [TestCase("Name", typeof(string))]
+        [TestCase("Notes", typeof(string))]
         public void Type_ShouldHaveProperty_(string propertyName, Type propertyType)
         {
             //---------------Set up test pack-------------------
