@@ -44,6 +44,21 @@ namespace SomeProjectUsingEntity.Tests.Models
             //---------------Test Result -----------------------
         }
 
+        [Test]
+        public void Name_ShouldHaveMaxLength_100()
+        {
+            //---------------Set up test pack-------------------
+            var sut = new SomeEntity();
+
+            //---------------Assert Precondition----------------
+
+            //---------------Execute Test ----------------------
+            sut.ShouldHaveMaxLengthOf(100, o => o.Name);
+
+            //---------------Test Result -----------------------
+        }
+
+
 
     }
 }
