@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace SomeProjectUsingEntity.Tests
 {
-    public class Class1
+    public class SomeDBSchema
     {
+        public const string DB_SCHEMA =
+            @"create table SomeEntity(Id int primary key identity, Name nvarchar(100) not null, Notes nvarchar(max))";
     }
 }
