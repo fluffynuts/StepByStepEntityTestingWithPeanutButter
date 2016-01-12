@@ -55,7 +55,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="PeanutButter.RandomGenerators, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\SomeProjectUsingEntity\packages\PeanutButter.RandomGenerators.1.1.0\lib\net40\PeanutButter.RandomGenerators.dll</HintPath>
+      <HintPath>..\SomeProjectUsingEntity\packages\PeanutButter.RandomGenerators.1.1.5\lib\net40\PeanutButter.RandomGenerators.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PeanutButter.TempDb, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -93,7 +93,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\SomeContextPersistenceTestFixtureBase.cs" />
+    <Compile Include="Models\SomeEntityBuilder.cs" />
     <Compile Include="Models\TestSomeEntity.cs" />
+    <Compile Include="Models\TestSomeEntityPersistence.cs" />
     <Compile Include="SomeDBSchema.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -106,6 +109,9 @@
       <Project>{2E0B4465-E6C9-4F67-85C3-445B1514ADA7}</Project>
       <Name>SomeProjectUsingEntity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GenericBuilderTests-ExampleUsage.cs.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
