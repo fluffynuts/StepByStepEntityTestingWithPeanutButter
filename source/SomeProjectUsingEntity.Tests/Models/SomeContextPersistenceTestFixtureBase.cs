@@ -6,7 +6,7 @@ namespace SomeProjectUsingEntity.Tests.Models
     {
         public SomeContextPersistenceTestFixtureBase()
         {
-            Configure(false, connectionString => new DbSchemaImporter(connectionString, SomeDBSchema.DB_SCHEMA));
+            Configure(false, connectionString => new CompositeDBMigrator(connectionString, true));
         }
     }
 }
