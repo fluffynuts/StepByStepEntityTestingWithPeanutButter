@@ -4,7 +4,7 @@
     {
         public class SomeEntity
         {
-            public const string NAME = "SomeEntity";
+            public const string NAME = "SomeEntities";
             public class Columns
             {
                 public const string ID = "Id";
@@ -15,7 +15,7 @@
 
         public class SomeChildEntity
         {
-            public const string NAME = "SomeChildEntity";
+            public const string NAME = "SomeChildEntities";
             public class Columns
             {
                 public const string ID = "Id";

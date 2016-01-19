@@ -12,5 +12,10 @@ namespace SomeProjectUsingEntity
         public SomeContext(DbConnection connection): base(connection, true)
         {
         }
+
+        static SomeContext()
+        {
+            Database.SetInitializer<SomeContext>(null);
+        }
     }
 }
