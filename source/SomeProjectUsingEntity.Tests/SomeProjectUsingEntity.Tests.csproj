@@ -103,6 +103,7 @@
     <Compile Include="Models\SomeEntityBuilder.cs" />
     <Compile Include="Models\TestSomeChildEntity.cs" />
     <Compile Include="Models\TestSomeChildEntityPersistence.cs" />
+    <Compile Include="Models\TestSomeContext.cs" />
     <Compile Include="Models\TestSomeEntity.cs" />
     <Compile Include="Models\TestSomeEntityPersistence.cs" />
     <Compile Include="SomeDBSchema.cs" />
