@@ -34,12 +34,12 @@ namespace SomeProjectUsingEntity.Tests.Models
         public void Name_ShouldBeRequired()
         {
             //---------------Set up test pack-------------------
-            var sut = typeof (SomeEntity);
+            var sut = Create();
 
             //---------------Assert Precondition----------------
 
             //---------------Execute Test ----------------------
-            sut.ShouldHaveRequiredProperty("Name");
+            sut.ShouldBeRequired(o => o.Name);
 
             //---------------Test Result -----------------------
         }
@@ -48,7 +48,7 @@ namespace SomeProjectUsingEntity.Tests.Models
         public void Name_ShouldHaveMaxLength_100()
         {
             //---------------Set up test pack-------------------
-            var sut = new SomeEntity();
+            var sut = Create();
 
             //---------------Assert Precondition----------------
 
@@ -56,6 +56,11 @@ namespace SomeProjectUsingEntity.Tests.Models
             sut.ShouldHaveMaxLengthOf(100, o => o.Name);
 
             //---------------Test Result -----------------------
+        }
+
+        private SomeEntity Create()
+        {
+            return new SomeEntity();
         }
     }
 }
